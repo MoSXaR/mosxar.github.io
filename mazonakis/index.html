@@ -4,33 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Γιώργος Μαζωνάκης — Τερκενλο-ΜΑΖΩ-μα</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:#050505}
-body{display:flex;justify-content:center;font-family:"Noto Sans",system-ui,sans-serif}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  background:#050505
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  font-family:"Noto Sans",system-ui,sans-serif
+}
+
 .poster{
-  position:relative;width:min(100vw,1024px);aspect-ratio:2/3;
+  position:relative;
+  width:min(100vw,1024px);
+  aspect-ratio:2/3;
   background:#050505 url("background.png") center top/100% 100% no-repeat;
   overflow:hidden;
 }
+
 /* The graphic already contains the gold table frame and column headings.
-   This HTML layer supplies the live/scrollable 46-song body. */
+   This HTML layer supplies the live/scrollable 47-song body. */
+
 .song-body{
   position:absolute;
-  left:4.5%; right:4.5%;
-  top:58.2%; bottom:4.8%;
-  overflow-y:auto; overflow-x:hidden;
+  left:4.5%;
+  right:4.5%;
+  top:58.2%;
+  bottom:4.8%;
+  overflow-y:auto;
+  overflow-x:hidden;
   scrollbar-width:thin;
   scrollbar-color:#d6a43a #070707;
   -webkit-overflow-scrolling:touch;
   background:#000;
 }
-.song-body::-webkit-scrollbar{width:7px}
-.song-body::-webkit-scrollbar-track{background:#050505}
-.song-body::-webkit-scrollbar-thumb{background:#d6a43a;border-radius:8px}
+
+.song-body::-webkit-scrollbar{
+  width:7px
+}
+
+.song-body::-webkit-scrollbar-track{
+  background:#050505
+}
+
+.song-body::-webkit-scrollbar-thumb{
+  background:#d6a43a;
+  border-radius:8px
+}
+
 table{
   width:100%;
   border-collapse:collapse;
@@ -43,83 +74,458 @@ col.title{width:70%}
 col.key{display:none}
 col.lyrics{width:20%}
 
+tbody tr{
+  height:38px;
+  border-bottom:1px solid rgba(214,164,58,.28)
+}
+
+td{
+  padding:7px 8px;
+  font-family:"Noto Serif",Georgia,serif;
+  font-size:15px;
+  line-height:1.15;
+  vertical-align:middle
+}
+
+td.num{
+  text-align:center;
+  color:#d6a43a;
+  font-family:"Noto Sans",sans-serif;
+  font-size:13px
+}
+
+td.title{
+  font-weight:600;
+  white-space:normal;
+}
+
+/* TITLE: 20% wider horizontally */
+td.title span{
+  display:inline-block;
+  transform:scaleX(1.2);
+  transform-origin:left center;
+}
+
 td.key{
   display:none;
+  text-align:center;
+  color:#f0c15c;
+  font-weight:700;
+  font-family:"Noto Sans",sans-serif
 }
-tbody tr{height:38px;border-bottom:1px solid rgba(214,164,58,.28)}
-td{padding:7px 8px;font-family:"Noto Serif",Georgia,serif;font-size:15px;line-height:1.15;vertical-align:middle}
-td.num{text-align:center;color:#d6a43a;font-family:"Noto Sans",sans-serif;font-size:13px}
-td.title{font-weight:600;white-space:normal}
-td.key{text-align:center;color:#f0c15c;font-weight:700;font-family:"Noto Sans",sans-serif}
-td.lyrics{text-align:center}
-a{display:inline-block;color:#f0c15c;text-decoration:none;font-family:"Noto Sans",sans-serif;font-size:13px;font-weight:700;border:1px solid rgba(240,193,92,.65);border-radius:7px;padding:4px 8px}
-a:active,a:hover{background:#f0c15c;color:#050505}
+
+td.lyrics{
+  text-align:center
+}
+
+a{
+  display:inline-block;
+  color:#f0c15c;
+  text-decoration:none;
+  font-family:"Noto Sans",sans-serif;
+  font-size:13px;
+  font-weight:700;
+  border:1px solid rgba(240,193,92,.65);
+  border-radius:7px;
+  padding:4px 8px
+}
+
+a:active,
+a:hover{
+  background:#f0c15c;
+  color:#050505
+}
+
 @media(max-width:600px){
-  .song-body{left:4.5%;right:4.5%;top:58.2%;bottom:4.8%}
-  tbody tr{height:42px}
-  td{font-size:12px;padding:6px 4px}
-  td.num{font-size:11px}
-  td.key{font-size:11px}
-  a{font-size:10px;padding:4px 5px}
+
+  .song-body{
+    left:4.5%;
+    right:4.5%;
+    top:58.2%;
+    bottom:4.8%
+  }
+
+  tbody tr{
+    height:42px
+  }
+
+  td{
+    font-size:12px;
+    padding:6px 4px
+  }
+
+  td.num{
+    font-size:11px
+  }
+
+  td.key{
+    font-size:11px
+  }
+
+  td.title span{
+    transform:scaleX(1.2);
+  }
+
+  a{
+    font-size:10px;
+    padding:4px 5px
+  }
 }
+
 </style>
 </head>
+
 <body>
+
 <div class="poster">
+
   <div class="song-body" aria-label="Λίστα 47 τραγουδιών — Lyrics">
+
     <table>
-      <colgroup><col class="num"><col class="title"><col class="key"><col class="lyrics"></colgroup>
+
+      <colgroup>
+        <col class="num">
+        <col class="title">
+        <col class="key">
+        <col class="lyrics">
+      </colgroup>
+
       <tbody>
-        <tr><td class="num">1</td><td class="title">Το Gucci Φόρεμα</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-gucci-forema" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">2</td><td class="title">Σάββατο</td><td class="key">G</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-savvato" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">3</td><td class="title">Ζηλεύω</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-zilevo" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">4</td><td class="title">Ανήκω Σε Μένα</td><td class="key">F#m</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-aniko-se-mena" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">5</td><td class="title">Τέρμα</td><td class="key">Cm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-terma" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">6</td><td class="title">Έλα Να Δεις</td><td class="key">B</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ela-na-dis" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">7</td><td class="title">Θέλω Να Γυρίσω</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-thelo-na-giriso-sta-palia" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">8</td><td class="title">Είσαι Ένα Τρένο</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ise-ena-treno" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">9</td><td class="title">Είσαι Φοβερή</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ise-foveri" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">10</td><td class="title">Τέσσερις</td><td class="key">E</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tesseris" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">11</td><td class="title">Νικοτίνη</td><td class="key">A</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-nikotini" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">12</td><td class="title">Τρελός</td><td class="key">Em</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-trelos" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">13</td><td class="title">Όπου Κοιτάξεις</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-opou-kitaksis" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">14</td><td class="title">Τι Σου Έχω Κάνει</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ti-sou-exo-kani" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">15</td><td class="title">Στον Έρωτα Παρανοείς</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ston-erota" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">16</td><td class="title">Η Καρδιά Μου</td><td class="key">Em</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-kardia-mou" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">17</td><td class="title">Το Παράξενο Με Μένα</td><td class="key">A♭</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-to-parakseno-me-mena" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">18</td><td class="title">Ένα Θαύμα</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ena-thavma" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">19</td><td class="title">Η Ζωή Μου Βήμα</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-zoi-mou-vima" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">20</td><td class="title">Σαν Ήμουνα Παιδί</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-san-imouna-pedi" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">21</td><td class="title">Η Φιλοσοφία Μου</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-filosofia-mou" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">22</td><td class="title">Μου Λείπεις</td><td class="key">Dm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mou-lipis" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">23</td><td class="title">Δες Ποια Αγάπησα</td><td class="key">D♭</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-des-pia-agapisa" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">24</td><td class="title">Πάρ’ Τα Όλα Δικά Σου</td><td class="key">F#m</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-par-ta-ola-dika-sou" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">25</td><td class="title">Δύσκολα Φεγγάρια</td><td class="key">Am</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-diskola-feggaria" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">26</td><td class="title">Μίλα</td><td class="key">B♭</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mila" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">27</td><td class="title">Μη Μου Ζητάς</td><td class="key">G</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mi-mou-zitas" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">28</td><td class="title">Ένα Κενό</td><td class="key">Em</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ena-keno" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">29</td><td class="title">Με Τα Μάτια Να Το Λες</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-me-ta-matia-na-to-les" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">30</td><td class="title">Ώρες Μικρές</td><td class="key">Cm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ores-mikres" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">31</td><td class="title">Τόσα Βράδια</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tosa-vradia" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">32</td><td class="title">Ποτέ Ποτέ</td><td class="key">D</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-pote-pote" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">33</td><td class="title">Να Περνάς</td><td class="key">Cm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-na-pernas" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">34</td><td class="title">Λείπει Πάλι Ο Θεός</td><td class="key">E♭</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-lipi-pali-o-theos" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">35</td><td class="title">Οινόπνευμα Φτηνό</td><td class="key">G</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-inopnevma-ftino" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">36</td><td class="title">Διανυκτερεύω</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-dianikterevo" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">37</td><td class="title">Παλιόπαιδο Θα Γίνω</td><td class="key">F#m</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-paliopedo-tha-gino" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">38</td><td class="title">Το Λάθος Μου Το Τελευταίο</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-to-lathos-mou-to-teleftaio" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">39</td><td class="title">Παιδί Της Νύχτας</td><td class="key">G</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-pedi-tis-nixtas" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">40</td><td class="title">Φεύγω Για Μένα</td><td class="key">F#m</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-fevgo-gia-mena" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">41</td><td class="title">Αγαπώ Σημαίνει</td><td class="key">Cm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-agapo-simeni" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">42</td><td class="title">Τρεις Το Πρωί</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tris-to-proi" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">43</td><td class="title">Τελειώσαμε Εδώ</td><td class="key">Fm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-teliosame-edo" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">44</td><td class="title">Μη Μου Λες Τώρα Να Ζω Με Αναμνήσεις</td><td class="key">A</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mi-mou-les-na-zo-me-anamnisis" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">45</td><td class="title">Εγώ Τη Ζωή Μου</td><td class="key">Gm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ego-ti-zoi-mou" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">46</td><td class="title">Με Λένε Γιώργο</td><td class="key">F#m</td><td class="lyrics"><a href="https://www.greeklyrics.gr/kallitexnis-mazonakis-giorgos" target="_blank" rel="noopener">Lyrics</a></td></tr>
-        <tr><td class="num">47</td><td class="title">Σ&#x27; Έχω Κάνει Θεό</td><td class="key">Bm</td><td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-se-exo-kani-theo" target="_blank" rel="noopener">Lyrics</a></td></tr>
+
+        <tr>
+          <td class="num">1</td>
+          <td class="title"><span>Το Gucci Φόρεμα</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-gucci-forema" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">2</td>
+          <td class="title"><span>Σάββατο</span></td>
+          <td class="key">G</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-savvato" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">3</td>
+          <td class="title"><span>Ζηλεύω</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-zilevo" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">4</td>
+          <td class="title"><span>Ανήκω Σε Μένα</span></td>
+          <td class="key">F#m</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-aniko-se-mena" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">5</td>
+          <td class="title"><span>Τέρμα</span></td>
+          <td class="key">Cm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-terma" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">6</td>
+          <td class="title"><span>Έλα Να Δεις</span></td>
+          <td class="key">B</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ela-na-dis" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">7</td>
+          <td class="title"><span>Θέλω Να Γυρίσω</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-thelo-na-giriso-sta-palia" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">8</td>
+          <td class="title"><span>Είσαι Ένα Τρένο</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ise-ena-treno" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">9</td>
+          <td class="title"><span>Είσαι Φοβερή</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ise-foveri" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">10</td>
+          <td class="title"><span>Τέσσερις</span></td>
+          <td class="key">E</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tesseris" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">11</td>
+          <td class="title"><span>Νικοτίνη</span></td>
+          <td class="key">A</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-nikotini" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">12</td>
+          <td class="title"><span>Τρελός</span></td>
+          <td class="key">Em</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-trelos" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">13</td>
+          <td class="title"><span>Όπου Κοιτάξεις</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-opou-kitaksis" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">14</td>
+          <td class="title"><span>Τι Σου Έχω Κάνει</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ti-sou-exo-kani" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">15</td>
+          <td class="title"><span>Στον Έρωτα Παρανοείς</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ston-erota" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">16</td>
+          <td class="title"><span>Η Καρδιά Μου</span></td>
+          <td class="key">Em</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-kardia-mou" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">17</td>
+          <td class="title"><span>Το Παράξενο Με Μένα</span></td>
+          <td class="key">A♭</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-to-parakseno-me-mena" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">18</td>
+          <td class="title"><span>Ένα Θαύμα</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ena-thavma" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">19</td>
+          <td class="title"><span>Η Ζωή Μου Βήμα</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-zoi-mou-vima" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">20</td>
+          <td class="title"><span>Σαν Ήμουνα Παιδί</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-san-imouna-pedi" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">21</td>
+          <td class="title"><span>Η Φιλοσοφία Μου</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-i-filosofia-mou" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">22</td>
+          <td class="title"><span>Μου Λείπεις</span></td>
+          <td class="key">Dm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mou-lipis" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">23</td>
+          <td class="title"><span>Δες Ποια Αγάπησα</span></td>
+          <td class="key">D♭</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-des-pia-agapisa" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">24</td>
+          <td class="title"><span>Πάρ’ Τα Όλα Δικά Σου</span></td>
+          <td class="key">F#m</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-par-ta-ola-dika-sou" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">25</td>
+          <td class="title"><span>Δύσκολα Φεγγάρια</span></td>
+          <td class="key">Am</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-diskola-feggaria" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">26</td>
+          <td class="title"><span>Μίλα</span></td>
+          <td class="key">B♭</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mila" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">27</td>
+          <td class="title"><span>Μη Μου Ζητάς</span></td>
+          <td class="key">G</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mi-mou-zitas" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">28</td>
+          <td class="title"><span>Ένα Κενό</span></td>
+          <td class="key">Em</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ena-keno" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">29</td>
+          <td class="title"><span>Με Τα Μάτια Να Το Λες</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-me-ta-matia-na-to-les" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">30</td>
+          <td class="title"><span>Ώρες Μικρές</span></td>
+          <td class="key">Cm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ores-mikres" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">31</td>
+          <td class="title"><span>Τόσα Βράδια</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tosa-vradia" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">32</td>
+          <td class="title"><span>Ποτέ Ποτέ</span></td>
+          <td class="key">D</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-pote-pote" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">33</td>
+          <td class="title"><span>Να Περνάς</span></td>
+          <td class="key">Cm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-na-pernas" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">34</td>
+          <td class="title"><span>Λείπει Πάλι Ο Θεός</span></td>
+          <td class="key">E♭</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-lipi-pali-o-theos" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">35</td>
+          <td class="title"><span>Οινόπνευμα Φτηνό</span></td>
+          <td class="key">G</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-inopnevma-ftino" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">36</td>
+          <td class="title"><span>Διανυκτερεύω</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-dianikterevo" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">37</td>
+          <td class="title"><span>Παλιόπαιδο Θα Γίνω</span></td>
+          <td class="key">F#m</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-paliopedo-tha-gino" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">38</td>
+          <td class="title"><span>Το Λάθος Μου Το Τελευταίο</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-to-lathos-mou-to-teleftaio" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">39</td>
+          <td class="title"><span>Παιδί Της Νύχτας</span></td>
+          <td class="key">G</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-pedi-tis-nixtas" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">40</td>
+          <td class="title"><span>Φεύγω Για Μένα</span></td>
+          <td class="key">F#m</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-fevgo-gia-mena" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">41</td>
+          <td class="title"><span>Αγαπώ Σημαίνει</span></td>
+          <td class="key">Cm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-agapo-simeni" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">42</td>
+          <td class="title"><span>Τρεις Το Πρωί</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-tris-to-proi" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">43</td>
+          <td class="title"><span>Τελειώσαμε Εδώ</span></td>
+          <td class="key">Fm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-teliosame-edo" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">44</td>
+          <td class="title"><span>Μη Μου Λες Τώρα Να Ζω Με Αναμνήσεις</span></td>
+          <td class="key">A</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-mi-mou-les-na-zo-me-anamnisis" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">45</td>
+          <td class="title"><span>Εγώ Τη Ζωή Μου</span></td>
+          <td class="key">Gm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-ego-ti-zoi-mou" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">46</td>
+          <td class="title"><span>Με Λένε Γιώργο</span></td>
+          <td class="key">F#m</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/kallitexnis-mazonakis-giorgos" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
+        <tr>
+          <td class="num">47</td>
+          <td class="title"><span>Σ' Έχω Κάνει Θεό</span></td>
+          <td class="key">Bm</td>
+          <td class="lyrics"><a href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-se-exo-kani-theo" target="_blank" rel="noopener">Lyrics</a></td>
+        </tr>
+
       </tbody>
     </table>
+
   </div>
 </div>
+
 </body>
 </html>
