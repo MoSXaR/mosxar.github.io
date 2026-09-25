@@ -349,16 +349,6 @@ a.lyrics-button:hover{
 
         <tr>
           <td class="num">1</td>
-          <td class="title">Απόψε Θα Σ' Ονειρευτώ</td>
-          <td class="key"></td>
-          <td class="lyrics">
-            <a class="lyrics-button" href="https://www.greeklyrics.gr/stixoi-mazonakis-giorgos-apopse-tha-s-onirevto" target="_blank">ΣΤΙΧΟΙ</a>
-          </td>
-        </tr>
-
-
-        <tr>
-          <td class="num">2</td>
           <td class="title">Το Gucci Φόρεμα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -367,7 +357,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">3</td>
+          <td class="num">2</td>
           <td class="title">Σάββατο</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -376,7 +366,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">4</td>
+          <td class="num">3</td>
           <td class="title">Ζηλεύω</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -385,7 +375,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">5</td>
+          <td class="num">4</td>
           <td class="title">Ανήκω Σε Μένα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -394,7 +384,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">6</td>
+          <td class="num">5</td>
           <td class="title">Τέρμα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -403,7 +393,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">7</td>
+          <td class="num">6</td>
           <td class="title">Έλα Να Δεις</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -412,7 +402,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">8</td>
+          <td class="num">7</td>
           <td class="title">Θέλω Να Γυρίσω</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -421,7 +411,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">9</td>
+          <td class="num">8</td>
           <td class="title">Είσαι Ένα Τρένο</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -430,7 +420,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">10</td>
+          <td class="num">9</td>
           <td class="title">Είσαι Φοβερή</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -439,7 +429,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">11</td>
+          <td class="num">10</td>
           <td class="title">Τέσσερις</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -448,7 +438,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">12</td>
+          <td class="num">11</td>
           <td class="title">Νικοτίνη</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -457,7 +447,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">13</td>
+          <td class="num">12</td>
           <td class="title">Τρελός</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -466,7 +456,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">14</td>
+          <td class="num">13</td>
           <td class="title">Όπου Κοιτάξεις</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -475,7 +465,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">15</td>
+          <td class="num">14</td>
           <td class="title">Τι Σου Έχω Κάνει</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -484,7 +474,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">16</td>
+          <td class="num">15</td>
           <td class="title">Στον Έρωτα Παρανοείς</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -493,7 +483,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">17</td>
+          <td class="num">16</td>
           <td class="title">Η Καρδιά Μου</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -502,7 +492,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">18</td>
+          <td class="num">17</td>
           <td class="title">Το Παράξενο Με Μένα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -511,7 +501,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">19</td>
+          <td class="num">18</td>
           <td class="title">Ένα Θαύμα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -520,7 +510,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">20</td>
+          <td class="num">19</td>
           <td class="title">Η Ζωή Μου Βήμα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -529,7 +519,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">21</td>
+          <td class="num">20</td>
           <td class="title">Σαν Ήμουνα Παιδί</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -538,7 +528,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">22</td>
+          <td class="num">21</td>
           <td class="title">Η Φιλοσοφία Μου</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -547,7 +537,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">23</td>
+          <td class="num">22</td>
           <td class="title">Μου Λείπεις</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -556,7 +546,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">24</td>
+          <td class="num">23</td>
           <td class="title">Δες Ποια Αγάπησα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -565,7 +555,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">25</td>
+          <td class="num">24</td>
           <td class="title">Πάρ’ Τα Όλα Δικά Σου</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -574,7 +564,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">26</td>
+          <td class="num">25</td>
           <td class="title">Δύσκολα Φεγγάρια</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -583,7 +573,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">27</td>
+          <td class="num">26</td>
           <td class="title">Μίλα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -592,7 +582,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">28</td>
+          <td class="num">27</td>
           <td class="title">Μη Μου Ζητάς</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -601,7 +591,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">29</td>
+          <td class="num">28</td>
           <td class="title">Ένα Κενό</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -610,7 +600,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">30</td>
+          <td class="num">29</td>
           <td class="title">Με Τα Μάτια Να Το Λες</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -619,7 +609,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">31</td>
+          <td class="num">30</td>
           <td class="title">Ώρες Μικρές</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -628,7 +618,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">32</td>
+          <td class="num">31</td>
           <td class="title">Τόσα Βράδια</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -637,7 +627,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">33</td>
+          <td class="num">32</td>
           <td class="title">Ποτέ Ποτέ</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -646,7 +636,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">34</td>
+          <td class="num">33</td>
           <td class="title">Να Περνάς</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -655,7 +645,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">35</td>
+          <td class="num">34</td>
           <td class="title">Λείπει Πάλι Ο Θεός</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -664,7 +654,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">36</td>
+          <td class="num">35</td>
           <td class="title">Οινόπνευμα Φτηνό</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -673,7 +663,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">37</td>
+          <td class="num">36</td>
           <td class="title">Διανυκτερεύω</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -682,7 +672,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">38</td>
+          <td class="num">37</td>
           <td class="title">Παλιόπαιδο Θα Γίνω</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -691,7 +681,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">39</td>
+          <td class="num">38</td>
           <td class="title">Το Λάθος Μου Το Τελευταίο</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -700,7 +690,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">40</td>
+          <td class="num">39</td>
           <td class="title">Παιδί Της Νύχτας</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -709,7 +699,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">41</td>
+          <td class="num">40</td>
           <td class="title">Φεύγω Για Μένα</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -718,7 +708,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">42</td>
+          <td class="num">41</td>
           <td class="title">Αγαπώ Σημαίνει</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -727,7 +717,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">43</td>
+          <td class="num">42</td>
           <td class="title">Τρεις Το Πρωί</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -736,7 +726,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">44</td>
+          <td class="num">43</td>
           <td class="title">Τελειώσαμε Εδώ</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -745,7 +735,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">45</td>
+          <td class="num">44</td>
           <td class="title">Μη Μου Λες Τώρα Να Ζω Με Αναμνήσεις</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -754,7 +744,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">46</td>
+          <td class="num">45</td>
           <td class="title">Εγώ Τη Ζωή Μου</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -763,7 +753,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">47</td>
+          <td class="num">46</td>
           <td class="title">Με Λένε Γιώργο</td>
           <td class="key"></td>
           <td class="lyrics">
@@ -772,7 +762,7 @@ a.lyrics-button:hover{
         </tr>
 
         <tr>
-          <td class="num">48</td>
+          <td class="num">47</td>
           <td class="title">Σ' Έχω Κάνει Θεό</td>
           <td class="key"></td>
           <td class="lyrics">
